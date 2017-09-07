@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  android:drawable="@drawable/faceback" />
+    <item android:drawable="@drawable/h001" android:left="10.0dip" android:top="18.0dip" android:right="25.0dip" android:bottom="35.0dip" />
+</layer-list>
+
+<!-- 
+layer-list可以将多个图片按照顺序层叠起来
+ -->

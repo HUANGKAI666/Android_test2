@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ 
+    <ListView
+        android:id="@+id/list_view2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:fastScrollEnabled="false"
+          android:dividerHeight="5dp"
+        android:layout_above="@+id/cart_bottom"
+        android:layout_alignParentLeft="true" > 
+    </ListView> 
+    <RelativeLayout
+        android:layout_height="38dp"
+        android:id="@+id/cart_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorWhite" />
+
+        <Button
+            android:layout_width="80dp"
+            android:text="去结算"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/cart_check"
+            android:textSize="18sp"
+            android:background="#F44336"
+            android:layout_alignParentRight="true"
+            android:layout_height="48dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@id/cart_check"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="8dp"
+                 android:gravity="center_vertical"
+                android:layout_height="48dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="全选" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="合计:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="left"
+                    android:layout_marginLeft="6dp"
+                    android:singleLine="true"
+                    android:textSize="20sp"
+                    android:id="@+id/money"
+                    android:textColor="#FF0000"
+                    android:layout_height="wrap_content"
+                    android:text="￥0" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+  
+</RelativeLayout>
+

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@drawable/top1_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="凯小哥"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_above="@+id/linearLayout2" 
+        android:divider="@null"
+         android:choiceMode="none"
+        android:dividerHeight="5dp"
+ >
+
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/id_bom_but"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/iat_recognize"
+            android:background="#a9a9a9"
+            android:text="Go" />
+
+        <Button
+            android:id="@+id/iat_recognize"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/sound"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/id_bom_but"
+            android:layout_toRightOf="@+id/iat_recognize"
+            android:background="@drawable/edit_bg"
+            android:hint="请输入……"
+            android:ems="10" >
+
+        </EditText>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

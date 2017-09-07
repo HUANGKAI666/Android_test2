@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">溜溜</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_details">溜溜</string>
+    <string name="action_settings">Settings</string>
+    <color name = "colorWhite">#0F0F0F</color>
+    <color name = "colorPrimary">#ffff</color>
+     <color name = "blak">#1A1A1A</color>
+     <color name="red">	#FF0000</color>
+      <color name="listitme">	#FCFCFC</color>
+      <drawable name="clr_normal">#CD4F39</drawable>
+ <drawable name="clr_pressed">#CD853F</drawable>
+ 
+   <drawable name="clr_normal2">#FFA500</drawable>
+ <drawable name="clr_pressed2">#FFD700</drawable>
+
+</resources>
